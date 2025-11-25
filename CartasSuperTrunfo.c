@@ -5,11 +5,129 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
+
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
+  // varaaveis do pais 01
+
+  char estado1;
+  char nomeCidade1[50];
+  char codigo1[20];
+  int populacao1;
+  float area1;
+  float pib1;
+  int pontosTuristicos1;
+  float DensidadePopulacional1;
+  float PIBperCapita1;
+
+  //variaveis do pais 02
+
+  char estado2;
+  char nomeCidade2[50];
+  char codigo2[20];
+  int populacao2;
+  float area2;
+  float pib2;
+  int pontosTuristicos2;
+  float DensidadePopulacional2;
+  float PIBperCapita2;
+
   // Área para entrada de dados
+  // Entrada de dados do pais 01
 
-  // Área para exibição dos dados da cidade
+  printf("=== Cadastro do pais 01 ====\n");
 
-return 0;
+  printf("Digite o estado (uma letra de A a H): ");
+  scanf(" %c", &estado1);
+
+  printf("Digite o nome da cidade: ");
+  scanf(" %s", &nomeCidade1);
+
+  printf("Digite o codigo da carta (ex: A01): ");
+  scanf("%s", &codigo1);
+
+  printf("Digite a populacao: ");
+  scanf("%d", &populacao1);
+  
+  printf("Digite a area (em kM²):" );
+  scanf("%f", &area1);
+
+  printf("Digite o PiB: ");
+  scanf("%f", &pib1);
+
+  printf("Numeros de pontos turisticos: ");
+  scanf("%d", &pontosTuristicos1);
+
+  // VARIAVEL DE CALCULO CARTA 1 NIVEL AVENTUREIRO
+
+  DensidadePopulacional1 = populacao1 / area1;
+  PIBperCapita1 = pib1 / populacao1;
+
+
+  // Entrada de dados do pais 01 
+
+   printf("=== Cadastro do pais 02 ====\n");
+
+  printf("Digite o estado (uma letra de A a H): ");
+  scanf(" %c", &estado2);
+
+  printf("Digite o nome da cidade: ");
+  scanf(" %s", &nomeCidade2);
+
+  printf("Digite o codigo da carta (ex: A01): ");
+  scanf("%s", &codigo2);
+
+  printf("Digite a populacao: ");
+  scanf("%d", &populacao2);
+  
+  printf("Digite a area (em kM²): " );
+  scanf("%f", &area2);
+
+  printf("Digite o PiB: ");
+  scanf("%f", &pib2);
+
+  printf("Numeros de pontos turisticos: ");
+  scanf("%d", &pontosTuristicos2);
+
+  // VARIAVEL DE CALCULO CARTA 2 NIVEL AVENTUREIRO
+
+  DensidadePopulacional2 = populacao2 / area2;
+  PIBperCapita2 = pib2 / populacao2;
+
+   // Área para exibição dos dados da cidade
+   // Exibindo Pais 01
+
+   printf("\n===============================================\n");
+   printf("Carta 01:\n");
+   printf("Estado: %c\n", estado1);
+   printf("Nome da cidade: %s\n", nomeCidade1);
+   printf("Codigo da carta: %s\n", codigo1);
+   printf("Populacao: %d\n", populacao1);
+   printf("Tamanho daa area: %.2f Km²\n", area1 );
+   printf("PIB: %.2f bilhoes de reais\n", pib1);
+   printf("Pontos turisticos: %d\n", pontosTuristicos1);
+
+   printf("A densidade populacional e: %.2f hab/km²\n", DensidadePopulacional1);
+   printf("O pib per capita e: %.2f reais\n", PIBperCapita1);
+   
+
+   // Exibindo Pais 02
+
+   printf("\n===============================================\n");
+   printf("Carta 02:\n");
+   printf("Estado: %c\n", estado2);
+   printf("Nome da cidade: %s\n", nomeCidade2);
+   printf("Codigo da carta: %s\n", codigo2);
+   printf("Populacao: %d\n", populacao2);
+   printf("Tamanho daa area: %.2f Km²\n", area2 );
+   printf("PIB: %.2f bilhoes de reais\n", pib2);
+   printf("Pontos turisticos: %d\n", pontosTuristicos2);
+
+   printf("A densidade populacional e: %.2f hab/km²\n", DensidadePopulacional2);
+   printf("O pib per capita e: %.2f reais\n", PIBperCapita2);
+   
+
+
+  return 0;
+
 } 
