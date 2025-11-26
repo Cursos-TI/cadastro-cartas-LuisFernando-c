@@ -67,7 +67,7 @@ int main() {
   SuperPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + PIBperCapita1 + (1.0f / DensidadePopulacional1);
 
 
-  // Entrada de dados do pais 01 
+  // Entrada de dados do pais 02 
 
    printf("=== Cadastro do pais 02 ====\n");
 
@@ -98,7 +98,7 @@ int main() {
   PIBperCapita2 = pib2 / populacao2;
   SuperPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + PIBperCapita2 + (1.0f / DensidadePopulacional2);
 
-   // Área para exibição dos dados da cidade
+   // Área para exibição dos dados da carta 01 para o usuario
    // Exibindo Pais 01
 
    printf("\n===============================================\n");
@@ -113,7 +113,7 @@ int main() {
 
    printf("A densidade populacional e: %.2f hab/km²\n", DensidadePopulacional1);
    printf("O pib per capita e: %.2f reais\n", PIBperCapita1);
-   printf("O Super poder e: %f\n", SuperPoder1);
+   printf("O Super poder e: %.2f\n", SuperPoder1);
 
    
 
@@ -131,7 +131,7 @@ int main() {
 
    printf("A densidade populacional e: %.2f hab/km²\n", DensidadePopulacional2);
    printf("O pib per capita e: %.2f reais\n", PIBperCapita2);
-   printf("O Super poder e: %f\n", SuperPoder2);
+   printf("O Super poder e: %.2f\n", SuperPoder2);
 
 
 
