@@ -148,7 +148,19 @@ int main() {
     printf("PIB per Capita: Carta 1 venceu (%d)\n", PIBperCapita1 > PIBperCapita2);
     printf("Super Poder: Carta 1 venceu (%d)\n", SuperPoder1 > SuperPoder2);
 
-   
+
+    // COMPARANDO O ATRIBUTO ESCULHIDO ATRVES DE IF DE ELSE 
+    
+    printf("==========  ESCOLHA DE ATRIBUTO PARA COMPARACAO ============\n");
+
+    printf("O atributo escolhido foi POPULACAO:\n POPULACAO CARTA 01: %d\n POPULACAO CARTA 02: %d\n", populacao1 , populacao2);
+
+    if ( populacao1 > populacao2){
+    printf("ATRIBUTO CARTA 01 VENCEU !!!\n");
+    }
+    else{ printf("ATRIBUTO CARTA 02 VENCEU !!!\n");
+    }
+
 
 
   return 0;
